@@ -103,4 +103,6 @@ def chatbot_response():
     return "Sorry I didn't understand. Please ask about fees, courses, admission or contact."
 
 if __name__ == "__main__":
-    app.run(debug=True)
+   import os
+   port = int(os.environ.get("PORT",10000))
+   app.run(host="0.0.0.0", port=port)
