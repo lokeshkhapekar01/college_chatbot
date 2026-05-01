@@ -1,0 +1,148 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(to right,#1e3c72,#2a5298);
+color:white;
+text-align:center;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.4);
+}
+
+.navbar a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.navbar a:hover{
+color:#00ffff;
+}
+
+/* HERO */
+
+.hero{
+margin-top:120px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+/* CHATBOT */
+
+.chat-container{
+width:420px;
+margin:auto;
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+}
+
+#chatbox{
+height:300px;
+border:1px solid #ccc;
+padding:10px;
+overflow-y:auto;
+}
+
+/* USER MESSAGE */
+
+.user{
+background:#dcf8c6;
+padding:8px;
+margin:5px;
+border-radius:5px;
+text-align:right;
+}
+
+/* BOT MESSAGE */
+
+.bot{
+background:#f1f0f0;
+padding:8px;
+margin:5px;
+border-radius:5px;
+text-align:left;
+}
+
+/* INPUT */
+
+input{
+padding:10px;
+width:250px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* BUTTON */
+
+button{
+padding:10px 15px;
+background:#25D366;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* QUICK CHAT BUTTONS */
+
+.quick button{
+margin:5px;
+padding:8px 12px;
+background:#25D366;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* COURSE CARDS */
+
+.course-container{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.course-card{
+background:white;
+color:black;
+padding:20px;
+width:200px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:200px;
+padding:20px;
+background:black;
+color:white;
+text-align:center;
+font-size:14px;
+}
+
+.footer p{
+margin:5px;
+}

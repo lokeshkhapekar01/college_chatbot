@@ -1,0 +1,138 @@
+{
+"intents":[
+
+{
+"tag":"greeting",
+"patterns":["hi","hello","hey","good morning","good evening"],
+"responses":["Hello! How can I help you today?"]
+},
+
+{
+"tag":"fees",
+"patterns":[
+"fees",
+"college fees",
+"fee structure",
+"how much fees",
+"course fees",
+"mca fees",
+"bca fees",
+"mba fees"
+],
+"responses":[
+"The average college fee is around 50000 per year."
+]
+},
+
+{
+"tag":"courses",
+"patterns":[
+"courses",
+"available courses",
+"what courses are available",
+"programs",
+"degrees",
+"study programs"
+],
+"responses":[
+"We offer BCA, MCA, BBA, MBA and B.Tech courses."
+]
+},
+
+{
+"tag":"bca",
+"patterns":[
+"bca",
+"bca course",
+"tell me about bca",
+"bca duration",
+"bca subjects"
+],
+"responses":[
+"BCA is a 3 year undergraduate program focused on computer applications."
+]
+},
+
+{
+"tag":"mca",
+"patterns":[
+"mca",
+"mca course",
+"tell me about mca",
+"mca duration"
+],
+"responses":[
+"MCA is a 2 year postgraduate program in computer applications."
+]
+},
+
+{
+"tag":"admission",
+"patterns":[
+"admission",
+"how to apply",
+"admission process",
+"apply for college",
+"admission procedure"
+],
+"responses":[
+"You can apply online through our college admission portal."
+]
+},
+
+{
+"tag":"hostel",
+"patterns":[
+"hostel",
+"hostel facility",
+"is hostel available",
+"boys hostel",
+"girls hostel"
+],
+"responses":[
+"Yes, separate hostel facilities are available for boys and girls."
+]
+},
+
+{
+"tag":"library",
+"patterns":[
+"library",
+"digital library",
+"books available",
+"is library available"
+],
+"responses":[
+"Our college provides a digital library with thousands of books."
+]
+},
+
+{
+"tag":"placement",
+"patterns":[
+"placement",
+"placements",
+"job placement",
+"campus placement"
+],
+"responses":[
+"Our college provides placement support with many IT companies visiting every year."
+]
+},
+
+{
+"tag":"contact",
+"patterns":[
+"contact",
+"phone number",
+"email",
+"contact details",
+"college contact"
+],
+"responses":[
+"You can contact us at infojd@college.com or call 9876543210."
+]
+}
+
+]
+}

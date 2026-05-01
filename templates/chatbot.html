@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>College Chatbot</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+<script>
+
+function sendMessage(){
+
+var userText=document.getElementById("textInput").value;
+
+var chatbox=document.getElementById("chatbox");
+
+chatbox.innerHTML += "<div class='user'>"+userText+"</div>";
+
+fetch("/get?msg="+userText)
+
+.then(res=>res.text())
+
+.then(data=>{
+
+chatbox.innerHTML += "<div class='bot'>"+data+"</div>";
+
+chatbox.scrollTop=chatbox.scrollHeight;
+
+});
+
+document.getElementById("textInput").value="";
+
+}
+
+function quick(text){
+
+document.getElementById("textInput").value=text;
+
+sendMessage();
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>College Enquiry Chatbot</h1>
+
+<div class="chat-container">
+
+<div id="chatbox">
+
+<div class="bot">
+
+Hello! Ask me about fees, courses, admission or contact.
+
+</div>
+
+</div>
+
+<br>
+
+<div class="quick">
+
+<button onclick="quick('fees')">Fees</button>
+
+<button onclick="quick('courses')">Courses</button>
+
+<button onclick="quick('admission')">Admission</button>
+
+<button onclick="quick('hostel')">Hostel</button>
+
+</div>
+
+<br>
+
+<input id="textInput" type="text" placeholder="Ask your question">
+
+<button onclick="sendMessage()">Send</button>
+
+<br><br>
+
+<a href="/">Home</a>
+
+</div>
+
+<footer class="footer">
+
+<p>© 2026 College Enquiry Chatbot</p>
+<p>Developed by: Lokesh S. Khapekar</p>
+<p>MCA Final Year Major Project</p>
+<p>Department of Computer Applications</p>
+
+</footer>
+
+</body>
+
+</html>
